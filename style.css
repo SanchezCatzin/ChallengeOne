@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e485e9;
+}
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+}
+
+h1 {
+  height: 4%;
+  position: relative;
+  left: 40px;
+  top: -12px;
+  font-size: 80%;
+  width: 80%;
+  text-align: left;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #e485e9;
+}
+
+.areaIngresoTexto {
+  display: flex;
+  flex-flow: column;
+  width: 95%;
+  height: 95%;
+  border: solid;
+  background-color: antiquewhite;
+  border-radius: 35px;
+}
+@media (max-width: 768px) {
+  .areaIngresoTexto {
+    height: 400px;
+  }
+}
+.areaIngresoTexto > img {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.areaIngresoTexto > #texto {
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  resize: none;
+  margin: 10px;
+}
+.areaIngresoTexto > #texto:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .areaIngresoTexto > #texto {
+    width: 95%;
+    padding: 0 5%;
+  }
+}
+
+button {
+  width: 100px;
+  margin: 15px;
+  border-radius: 35px;
+  background-color: #262664;
+  color: #ffffff;
+}
+button:hover {
+  background-color: #323294;
+}
+
+.logo {
+  width: 50px;
+}
+
+#imagenBuscador {
+  width: 150px;
+  margin: 25%;
+}
+
+.areaEncriptada {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 60%;
+  top: 7%;
+  height: 80%;
+  width: 30%;
+  background-color: azure;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid;
+}
+@media (max-width: 768px) {
+  .areaEncriptada {
+    top: 420px;
+    left: 0.5%;
+    width: 98%;
+    border-width: 0 2%;
+    height: 400px;
+    padding: 0;
+  }
+}
+
+.textoEncriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+p {
+  text-align: justify;
+}
+
+.botones {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .botones {
+    align-items: center;
+    flex-flow: column;
+  }
+}/*# sourceMappingURL=style.css.map */
